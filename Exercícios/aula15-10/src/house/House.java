@@ -6,6 +6,7 @@ public class House {
 	private Door firstDoor;
 	private Door secondDoor;
 	private Door thirdDoor;
+	public int totalPortas = 0;
 	
 	public House(String color, Door firstDoor, Door secondDoor, Door thirdDoor) {
 		this.color = color;
@@ -37,6 +38,21 @@ public class House {
 	}
 	public void setThirdDoor(Door thirdDoor) {
 		this.thirdDoor = thirdDoor;
+	}
+	
+	public int howManyDoorsAreOpen() {
+		
+		if(this.firstDoor.isOpen()) {
+			totalPortas += 1;
+		}
+		if(this.secondDoor.isOpen()) {
+			totalPortas += 1;
+		}
+		if(this.thirdDoor.isOpen()) {
+			totalPortas += 1;
+		}
+		
+		return this.totalPortas;
 	}
 	
 	@Override

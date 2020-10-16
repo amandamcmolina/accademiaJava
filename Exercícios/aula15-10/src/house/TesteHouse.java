@@ -14,6 +14,10 @@ public class TesteHouse {
 		
 //		System.out.println(casaUm.getColor());
 		System.out.println(casaUm);
+		firstDoor.open();
+		secondDoor.open();
+		
+		System.out.println(casaUm.howManyDoorsAreOpen());
 	}
 	
 }
