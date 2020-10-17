@@ -1,6 +1,6 @@
 package entity;
 
-public class Account {
+abstract public class Account {
 
 		private int account;
 		protected double balance;
@@ -38,14 +38,7 @@ public class Account {
 			this.balance += amount;
 		}
 
-		public void withdraw(double amount) {
-			if (this.balance > amount) {
-				this.balance -= amount;
-			} else {
-				System.out.println("bateu");
-			}
-
-		}
+		abstract public void withdraw(double amount);
 
 		public void accountIncome() {
 			this.balance *= 0.7;
@@ -65,4 +58,15 @@ public class Account {
 		public String toString() {
 			return "Conta: " + this.account + "\n" + "Saldo: " + this.balance + "\n" + "Nome: " + this.name;
 		}
+		
+		
+		public String printAllAccountInfo() {
+		  String info = "Name: " + this.name;
+		  info += "\nAccount number: " + this.account;
+		  info += "\nAmount: R$" + this.balance;
+
+		  return info;
+		}
+		
+		
 }

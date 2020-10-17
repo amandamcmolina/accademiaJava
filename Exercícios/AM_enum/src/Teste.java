@@ -15,6 +15,8 @@ public class Teste {
 		t.start();
 		tt.start();
 		
+		Prioridade pp = Prioridade.MIN;
+		
 	}
 	
 //	public static int numero() {

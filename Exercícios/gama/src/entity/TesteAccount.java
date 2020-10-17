@@ -30,5 +30,10 @@ public class TesteAccount {
 		System.out.println(cc.getBalance());
 		System.out.println(cp.getBalance());
 		
+		SavingsAccount outraConta = new SavingsAccount();
+
+		
+		
+		
 	}
 }

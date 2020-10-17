@@ -1,6 +1,7 @@
 package entity;
 
 public class CheckingAccount extends Account{
+	
 	public String getType() {
 		return "CheckingAccount";
 	}
@@ -12,5 +13,10 @@ public class CheckingAccount extends Account{
 		} else {
 			System.out.println("bateu");
 		}
+	}
+	
+	@Override
+	public String printAllAccountInfo() {
+	  return super.printAllAccountInfo() + "\nAccount Type " + this.getType();
 	}
 }
