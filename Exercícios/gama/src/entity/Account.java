@@ -1,10 +1,14 @@
-package account;
+package entity;
 
 public class Account {
 
 		private int account;
-		private double balance;
+		protected double balance;
 		private String name;
+		
+//		public Account(int balance) {
+//			this.balance = balance;
+//		}
 
 		public int getAccount() {
 			return account;
