@@ -1,6 +1,6 @@
 package com.company.testes;
 
-public class Teste {
+public class TesteArrayPrimitivos {
     public static void main(String[] args) {
         int[] idades = new int[5];
         idades[0] = 3;
