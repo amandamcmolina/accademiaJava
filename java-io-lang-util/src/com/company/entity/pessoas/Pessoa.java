@@ -1,6 +1,6 @@
 package com.company.entity.pessoas;
 
-public class Pessoa {
+public class Pessoa implements Comparable<Pessoa>{
     private String nome;
     private int idade;
 
@@ -24,4 +24,10 @@ public class Pessoa {
     public String toString(){
         return "Meu nome é: " + this.nome;
     }
+
+    @Override
+    public int compareTo(Pessoa pessoa) {
+        return Integer.compare(this.idade, pessoa.idade);
+    }
+    //ordem natural
 }
