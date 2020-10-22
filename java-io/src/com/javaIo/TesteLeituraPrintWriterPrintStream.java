@@ -2,7 +2,7 @@ package com.javaIo;
 
 import java.io.*;
 
-public class TesteLeitura {
+public class TesteLeituraPrintWriterPrintStream {
     public static void main(String[] args) throws IOException {
         //Fluxo de Entrada com Arquivo
         FileInputStream fis = new FileInputStream("textoTeste.txt"); //entrada
